@@ -190,7 +190,7 @@ class MonkeyHelper(object):
         # self.screencap()
         time.sleep(2)
         self.zip_dir()
-        time.sleep(10)
+        time.sleep(5)
 
 
 
