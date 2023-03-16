@@ -307,4 +307,8 @@ print(type(age))"""
 #
 # if __name__ == "__main__":
 #     main()
+res = ("caeqsc "
+       "cnajklqa;eomc "
+       "ce;noqucb ")
+print(res.split()[1])
 

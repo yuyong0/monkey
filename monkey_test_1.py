@@ -90,7 +90,7 @@ class MonkeyHelper(object):
         global version_name
         version = res[res.find('\n') + 1:].split()[0]
         version_name = version.replace("versionName=", "")
-        print('{}'.format(version))
+        print('APP版本={}'.format(version_name))
         # 获取系统版本
         cmd_s = 'adb -s {} shell getprop ro.build.version.release'.format(device)
         release = os.popen(cmd_s).readline().replace('\n', '')
@@ -184,6 +184,7 @@ class MonkeyHelper(object):
         self.dev_connect()
         # self.uno_don()
         self.run_app()
+        time.sleep(2)
         self.get_version()
         self.mkdir()
         self.run_monkey()
