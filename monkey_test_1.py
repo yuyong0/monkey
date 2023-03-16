@@ -188,9 +188,9 @@ class MonkeyHelper(object):
         self.mkdir()
         self.run_monkey()
         # self.screencap()
-        time.sleep(20)
+        time.sleep(2)
         self.zip_dir()
-        time.sleep(60)
+        time.sleep(10)
 
 
 
@@ -205,5 +205,3 @@ if __name__ == "__main__":
     new_thread1.join()
     new_thread2.join()
     print('monkey测试完成 请查看日志')
-
-
