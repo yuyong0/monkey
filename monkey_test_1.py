@@ -28,7 +28,7 @@ class PyPrecondition(object):
         global flg
         count = 0
         while flg:
-            time.sleep(300)
+            time.sleep(3)
             count += 1
             os.system('adb shell screencap -p /sdcard/screen{}.png'.format(count))
             os.system('adb pull /sdcard/screen{}.png D:\\Jenkins\\workspace\\Android稳定性测试（Monkey）\\monkeyreport\\{}'.format(count, name))
@@ -192,6 +192,7 @@ class MonkeyHelper(object):
         time.sleep(2)
         self.zip_dir()
         time.sleep(5)
+        print("11111")
 
 
 
